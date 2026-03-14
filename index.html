@@ -1,12 +1,299 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Miraç Site</title>
-</head>
+export default function MiracCvSite() {
+  const skills = [
+    "Ethical Hacking",
+    "Web Application Security",
+    "Network Security",
+    "OSINT & Reconnaissance",
+    "Vulnerability Assessment",
+    "Linux / Kali Linux",
+    "Python Automation",
+    "JavaScript / Node.js",
+    "Burp Suite / Testing Workflows",
+    "Security Research",
+    "Incident Analysis",
+    "Hardening & Privacy",
+  ];
 
-<body>
-<h1>Merhaba Dünya</h1>
-<p>Benim ücretsiz GitHub sitem.</p>
-</body>
+  const specialties = [
+    {
+      title: "Offensive Security Mindset",
+      text: "Focused on understanding systems deeply, identifying weaknesses, and thinking like an attacker to strengthen digital defenses.",
+    },
+    {
+      title: "Secure Development",
+      text: "Combining software engineering with security-first architecture to build fast, reliable, and resilient web systems.",
+    },
+    {
+      title: "Research & Automation",
+      text: "Using scripting, tooling, and disciplined workflows to analyze environments, automate tasks, and improve operational efficiency.",
+    },
+  ];
 
-</html>
+  const experience = [
+    {
+      role: "Ethical Hacker",
+      company: "Independent Security Research",
+      period: "Active",
+      points: [
+        "Researching attack surfaces, web security concepts, and practical defense strategies.",
+        "Analyzing system behavior, privacy risks, and real-world hardening approaches.",
+        "Building a strong technical identity around cyber security, monitoring, and secure digital operations.",
+      ],
+    },
+    {
+      role: "Security-Focused Developer",
+      company: "Web & Automation Projects",
+      period: "Ongoing",
+      points: [
+        "Developing modern interfaces and backend systems with a security-aware mindset.",
+        "Working on automation, tooling, and technical workflows that improve precision and speed.",
+        "Bringing together development, analysis, and operational thinking in practical projects.",
+      ],
+    },
+  ];
+
+  const projects = [
+    {
+      name: "Recon & Analysis Workflows",
+      desc: "Structured approaches for reconnaissance, target surface review, and controlled technical analysis in lab-style environments.",
+    },
+    {
+      name: "Cyber Security Portfolio",
+      desc: "A strong personal technical identity built around ethical hacking, security research, monitoring aesthetics, and modern digital presence.",
+    },
+    {
+      name: "Automation Utilities",
+      desc: "Custom scripts and productivity tools designed to simplify repetitive technical operations and increase consistency.",
+    },
+  ];
+
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-black text-green-400 selection:bg-green-400 selection:text-black">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.22),transparent_32%),radial-gradient(circle_at_bottom,rgba(34,197,94,0.12),transparent_28%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.05)_1px,transparent_1px)] bg-[size:32px_32px]" />
+        <div className="absolute inset-0 opacity-30" style={{backgroundImage:"linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,255,120,0.06) 50%, rgba(0,0,0,0) 100%)", backgroundSize:"100% 12px"}} />
+      </div>
+
+      <div className="absolute inset-0 overflow-hidden opacity-20">
+        <div className="matrix-rain absolute inset-0">
+          {Array.from({ length: 28 }).map((_, i) => (
+            <span
+              key={i}
+              className="matrix-column"
+              style={{
+                left: `${(i * 100) / 28}%`,
+                animationDelay: `${(i % 7) * 0.8}s`,
+                animationDuration: `${8 + (i % 5)}s`,
+              }}
+            >
+              010101 ETHICAL HACKER 101010 CYBER SECURITY 110010 LINUX KALI PYTHON NODE JS RECON OSINT SECURITY
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <main className="relative z-10 mx-auto max-w-7xl px-6 py-8 md:px-10 lg:px-12">
+        <header className="mb-8 rounded-[28px] border border-green-500/20 bg-black/80 p-6 shadow-[0_0_40px_rgba(34,197,94,0.12)] backdrop-blur">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <div className="mb-3 inline-flex rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1 text-xs uppercase tracking-[0.35em] text-green-300">
+                Cyber Portfolio
+              </div>
+              <h1 className="text-4xl font-black uppercase tracking-[0.12em] text-green-300 md:text-6xl">
+                Ethical Hacker
+              </h1>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-green-200/80 md:text-base">
+                Security-focused professional with a strong technical presence in cyber security, ethical hacking, digital defense, system analysis, and modern web technologies.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="#projects"
+                  className="rounded-2xl border border-green-500/40 bg-green-500/10 px-5 py-3 text-sm font-medium text-green-300 transition hover:scale-[1.02] hover:bg-green-500/15"
+                >
+                  View Operations
+                </a>
+                <a
+                  href="https://pif339094.github.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-green-500/20 bg-transparent px-5 py-3 text-sm font-medium text-green-200 transition hover:bg-green-500/10"
+                >
+                  Live Website
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-3 text-sm text-green-200/80 sm:grid-cols-2 lg:min-w-[360px]">
+              <div className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                <div className="text-xs uppercase tracking-[0.25em] text-green-500/70">Title</div>
+                <div className="mt-2 font-semibold text-green-300">Ethical Hacker</div>
+              </div>
+              <div className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                <div className="text-xs uppercase tracking-[0.25em] text-green-500/70">Focus</div>
+                <div className="mt-2 font-semibold text-green-300">Offense • Defense • Research</div>
+              </div>
+              <div className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                <div className="text-xs uppercase tracking-[0.25em] text-green-500/70">Platform</div>
+                <div className="mt-2 font-semibold text-green-300">pif339094.github.io</div>
+              </div>
+              <div className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                <div className="text-xs uppercase tracking-[0.25em] text-green-500/70">Style</div>
+                <div className="mt-2 font-semibold text-green-300">Professional / Cyber-Tech</div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 shadow-[0_0_30px_rgba(34,197,94,0.08)] backdrop-blur">
+            <div className="mb-3 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Profile</div>
+            <h2 className="max-w-3xl text-2xl font-bold uppercase tracking-[0.08em] text-green-300 md:text-4xl">
+              Precision, discipline and cyber-oriented technical identity.
+            </h2>
+            <p className="mt-4 max-w-3xl text-sm leading-8 text-green-200/80 md:text-base">
+              I operate with a strong interest in cyber security, ethical hacking, system behavior, digital privacy, attack-surface awareness, and secure engineering. My work style reflects technical discipline, modern tooling, analytical thinking, and a constant drive to understand how systems can be tested, strengthened, and presented with authority.
+            </p>
+            <p className="mt-4 max-w-3xl text-sm leading-8 text-green-200/70 md:text-base">
+              This portfolio is designed to communicate a clear message: modern capability, security-first thinking, and a professional presence shaped by dark minimalism, high contrast, and an unmistakable cyber-tech atmosphere.
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 backdrop-blur">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Core Skills</div>
+            <div className="flex flex-wrap gap-3">
+              {skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-green-500/20 bg-green-500/5 px-4 py-2 text-sm text-green-300 shadow-[0_0_14px_rgba(34,197,94,0.08)]"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-6 grid gap-6 lg:grid-cols-3">
+          {specialties.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(34,197,94,0.12)]"
+            >
+              <div className="mb-3 text-lg font-semibold uppercase tracking-[0.06em] text-green-300">{item.title}</div>
+              <p className="text-sm leading-7 text-green-200/75">{item.text}</p>
+            </div>
+          ))}
+        </section>
+
+        <section className="mt-6 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 backdrop-blur">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Experience</div>
+            <div className="space-y-5">
+              {experience.map((job) => (
+                <div key={job.role} className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3 className="text-lg font-bold uppercase tracking-[0.05em] text-green-300">{job.role}</h3>
+                    <span className="rounded-full border border-green-500/20 bg-black px-3 py-1 text-xs text-green-400">
+                      {job.period}
+                    </span>
+                  </div>
+                  <div className="mt-2 text-sm text-green-500/75">{job.company}</div>
+                  <ul className="mt-3 space-y-2 text-sm leading-7 text-green-200/75">
+                    {job.points.map((point) => (
+                      <li key={point}>▸ {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div id="projects" className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 backdrop-blur">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Operations & Projects</div>
+            <div className="grid gap-4">
+              {projects.map((project) => (
+                <div key={project.name} className="rounded-2xl border border-green-500/15 bg-green-500/5 p-5">
+                  <h3 className="text-lg font-bold uppercase tracking-[0.05em] text-green-300">{project.name}</h3>
+                  <p className="mt-2 text-sm leading-7 text-green-200/75">{project.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-6 grid gap-6 lg:grid-cols-[1fr_0.9fr]">
+          <div className="rounded-[28px] border border-green-500/20 bg-black/75 p-6 backdrop-blur">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Security Domains</div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                ["Web Security", "Testing application behavior, identifying weak points, and improving resilience."],
+                ["Network Awareness", "Understanding exposure, service visibility, and system communication surfaces."],
+                ["Privacy & Hardening", "Reducing risk through disciplined configurations, layered thinking, and operational caution."],
+                ["Automation", "Using scripts and structured workflows to increase consistency, speed, and control."],
+              ].map(([title, text]) => (
+                <div key={title} className="rounded-2xl border border-green-500/15 bg-green-500/5 p-4">
+                  <div className="text-xl font-bold uppercase tracking-[0.05em] text-green-300">{title}</div>
+                  <p className="mt-2 text-sm leading-7 text-green-200/75">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[28px] border border-green-500/25 bg-green-500/5 p-6 shadow-[0_0_30px_rgba(34,197,94,0.08)]">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.35em] text-green-500/80">Contact / Access</div>
+            <h2 className="text-2xl font-bold uppercase tracking-[0.06em] text-green-300 md:text-3xl">Professional. Focused. Visible.</h2>
+            <p className="mt-3 text-sm leading-7 text-green-200/75 md:text-base">
+              This interface presents a cyber security identity built on strong aesthetics, technical seriousness, and a clear ethical hacker profile.
+            </p>
+            <div className="mt-6 space-y-3 text-sm text-green-300">
+              <div className="rounded-2xl border border-green-500/15 bg-black/60 p-4">Website: https://pif339094.github.io/</div>
+              <div className="rounded-2xl border border-green-500/15 bg-black/60 p-4">Title: Ethical Hacker</div>
+              <div className="rounded-2xl border border-green-500/15 bg-black/60 p-4">Theme: Black / Matrix Green / Cyber-Tech</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <style>{`
+        .matrix-rain {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: monospace;
+          font-size: 12px;
+          letter-spacing: 2px;
+          color: rgba(74, 222, 128, 0.75);
+          text-shadow: 0 0 8px rgba(34, 197, 94, 0.45);
+        }
+
+        .matrix-column {
+          position: absolute;
+          top: -30%;
+          width: 24px;
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          white-space: nowrap;
+          animation-name: rain;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          opacity: 0.9;
+        }
+
+        @keyframes rain {
+          0% {
+            transform: translateY(-15%);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.9;
+          }
+          100% {
+            transform: translateY(140%);
+            opacity: 0;
+          }
+        }
+      `}</style>
+    </div>
+  );
+}
